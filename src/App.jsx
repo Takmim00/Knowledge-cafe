@@ -1,9 +1,16 @@
 import "./App.css";
+import Blogs from "./Components/Blogs/Blogs";
+import BookMarks from "./Components/Bookmarks/BookMarks";
+import Header from "./Components/Header/Header";
 
 function App() {
   return (
     <>
-      <h1 className="text-6xl bg-purple-500">Knowledge-cafe</h1>
+      <Header></Header>
+      <div className="w-11/12 m-auto md:flex">
+        <Blogs></Blogs>
+        <BookMarks></BookMarks>
+      </div>
     </>
   );
 }
