@@ -11,8 +11,8 @@ const BookMarks = ({ bookMarks , readingTime}) => {
         <p className="text-2xl font-bold pl-4 py-4">
           BookMarked Blogs : {bookMarks.length}
         </p>
-        {bookMarks.map((bookMark) => (
-          <BookMark key={bookMark.id} bookMark={bookMark}></BookMark>
+        {bookMarks.map((bookMark,idx) => (
+          <BookMark key={idx} bookMark={bookMark}></BookMark>
         ))}
       </div>
     </div>
